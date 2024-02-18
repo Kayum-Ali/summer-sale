@@ -457,7 +457,7 @@
                   Total: $<span id="total"></span>
                 </p>
                 <hr class="my-4" />
-                <button class="btn btn-wide bg-[#F11A7B] text-white">
+                <button class="btn btn-wide bg-[#F11A7B] text-white" onclick="my_modal_1.showModal()">
                   Make Purchase
                 </button>
               </div>
@@ -465,7 +465,31 @@
           </div>
         </div>
       </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" >open modal</button> -->
+<dialog id="my_modal_1" class="modal ">
+  <div class="modal-box bg-white">
+    <img class="flex mx-auto mb-5" src="Images/success.png" alt="">
+    <h3 class="font-bold text-5xl text-center text-black pt-5 items-center">Congratulations!</h3>
+    <p class="font-bold text-lg text-center pt-5">Your Purchase the Products</p>
+    <button class="mx-auto flex justify-center btn-success px-5 py-3 btn mt-5">Go Home</button>
+
+  
+    
+    <div class="modal-action">
+      <p class="py-4 mr-5">Press ESC key or click the button below to close</p>
+
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </main>
+
+
 
     <script src="./index.js"></script>
   </body>
